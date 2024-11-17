@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1f1f1f;
+  color: #f4f4f4;
+}
+
+header {
+  background-color: #1c1c1c;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00d1b2;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(/web/public/images/myke-simon-atsUqIm3wxo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #00d1b2;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  padding: 20px;
+}
+
+.series {
+  padding: 40px;
+  text-align: center;
+}
+
+.series h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00d1b2;
+}
+
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.serie-item {
+  background-color: #292929;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding-bottom: 15px;
+}
+
+.serie-item:hover {
+  transform: scale(1.05);
+}
+
+.serie-item img {
+  width: 100%;
+  height: auto;
+  max-width: 250px; 
+  margin: 0 auto;
+  display: block;
+  border-bottom: 3px solid #00d1b2;
+
+}
+
+.serie-item p {
+  padding: 15px;
+  font-size: 1.1rem;
+  color: #f4f4f4;
+}
+
+.login, .contacto {
+  padding: 40px;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #292929;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+}
+
+.login h2, .contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00d1b2;
+  text-align: center;
+}
+
+.login-form, .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label, .contact-form label {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #f4f4f4;
+}
+
+.login-form input, .contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #f4f4f4;
+  font-size: 1rem;
+  background-color: #1c1c1c;
+  color: #f4f4f4;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus, .contact-form input:focus, .contact-form textarea:focus {
+  border-color: #00d1b2;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #00d1b2;
+  color: #1f1f1f;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00a189;
+}
+
+footer {
+  background-color: #222; 
+  color: #00d1b2; 
+  padding: 20px 0;
+  font-family: Arial, sans-serif; 
+}
+
+.footer-content {
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+.footer-logo {
+  flex: 1; 
+  text-align: center; 
+}
+
+.footer-links, .footer-socials {
+  flex: 1; 
+  text-align: center;
+}
+
+.footer-links ul, .footer-socials ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+.footer-links li, .footer-socials li {
+  margin: 10px 0; 
+}
+
+.footer-links a, .footer-socials a {
+  color: #00d1b2; 
+  text-decoration: none; 
+}
+
+.footer-links a:hover, .footer-socials a:hover {
+  text-decoration: underline; 
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+/* Listado */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #00d1b2;
+  margin-bottom: 20px;
+}
+
+.movie-list {
+  list-style: none;
+  padding: 0;
+}
+
+.movie-item {
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.movie-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.movie-link {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.movie-link h2 {
+  margin: 0;
+  color: #00d1b2;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.movie-link:hover h2 {
+  color: #00d1b2;
+}
+
+.movie-link p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #f4f4f4;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #00d1b2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #00d1b2;
+}
+/* Detalle */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.movie-detail {
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-title {
+  font-size: 2em;
+  color: #00d1b2;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #f4f4f4;
+}
+
+.movie-info {
+  font-size: 1em;
+  color: #f4f4f4;
+  margin: 5px 0;
+}
+
+.movie-description {
+  font-size: 1.1em;
+  color: #f4f4f4;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.copy-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.copy-item {
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #00d1b2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #00d1b2;
+}
+

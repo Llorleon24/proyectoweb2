@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "nombre": "El Padrino",
+        "ano": 1972,
+        "duracion": 175,
+        "genero": "Drama",
+        "director": "Francis Ford Coppola",
+        "descripcion": "Una saga épica sobre una familia criminal.",
+        "copias": [
+            { "estado": "Disponible", "formato": "DVD" },
+            { "estado": "Prestado", "formato": "Blu-Ray" }
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Fallen Angels",
+        "ano": 1995,
+        "duracion": 99,
+        "genero": "Drama Romance",
+        "director": "Wong Kar-wai",
+        "descripcion": "Historias entrelazadas en la vibrante Hong Kong.",
+        "copias": [
+            { "estado": "Disponible", "formato": "DVD" }
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Blue Velvet",
+        "ano": 1986,
+        "duracion": 120,
+        "genero": "Thriller",
+        "director": "David Lynch",
+        "descripcion": "Un viaje oscuro hacia los secretos de una pequeña ciudad.",
+        "copias": [
+            { "estado": "Disponible", "formato": "Blu-Ray" },
+            { "estado": "Disponible", "formato": "DVD" }
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "La Semilla del Diablo",
+        "ano": 1968,
+        "duracion": 137,
+        "genero": "Horror",
+        "director": "Roman Polanski",
+        "descripcion": "Una joven pareja enfrenta una conspiración siniestra en su nuevo hogar.",
+        "copias": [
+            { "estado": "Disponible", "formato": "DVD" }
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Perfect Blue",
+        "ano": 1997,
+        "duracion": 81,
+        "genero": "Anime Thriller",
+        "director": "Satoshi Kon",
+        "descripcion": "Un thriller psicológico sobre la identidad y la fama.",
+        "copias": [
+            { "estado": "Prestado", "formato": "Blu-Ray" }
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "Millennium Actress",
+        "ano": 2001,
+        "duracion": 87,
+        "genero": "Anime Drama",
+        "director": "Satoshi Kon",
+        "descripcion": "La vida de una actriz japonesa contada a través de sus películas.",
+        "copias": [
+            { "estado": "Disponible", "formato": "DVD" }
+        ]
+    },
+    {
+        "id": 7,
+        "nombre": "Cisne Negro",
+        "ano": 2010,
+        "duracion": 108,
+        "genero": "Thriller Drama",
+        "director": "Darren Aronofsky",
+        "descripcion": "La obsesión de una bailarina la lleva al límite de la locura.",
+        "copias": [
+            { "estado": "Disponible", "formato": "Blu-Ray" }
+        ]
+    },
+    {
+        "id": 8,
+        "nombre": "In the Mood for Love",
+        "ano": 2000,
+        "duracion": 98,
+        "genero": "Romance Drama",
+        "director": "Wong Kar-wai",
+        "descripcion": "Dos vecinos forman un vínculo único cuando sospechan que sus respectivas parejas les son infieles.",
+        "copias": [
+            { "estado": "Disponible", "formato": "Blu-Ray" },
+            { "estado": "Disponible", "formato": "DVD" }
+        ]
+    }
+]

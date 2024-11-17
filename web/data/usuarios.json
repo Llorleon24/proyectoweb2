@@ -1,0 +1,29 @@
+[
+    {
+        "username": "admin",
+        "password": "admin123",
+        "peliculas": [
+            {
+                "id": 1,
+                "nombre": "El Padrino",
+                "estado": "En posesión"
+            },
+            {
+                "id": 5,
+                "nombre": "Perfect Blue",
+                "estado": "En posesión"
+            }
+        ]
+    },
+    {
+        "username": "usuario1",
+        "password": "usuario",
+        "peliculas": [
+            {
+                "id": 3,
+                "nombre": "Blue Velvet",
+                "estado": "En posesión"
+            }
+        ]
+    }
+]

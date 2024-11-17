@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Película</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="movie-detail">
+            <h1 class="movie-title"><%= pelicula.nombre %></h1>
+            <p class="movie-info"><strong>Año:</strong> <%= pelicula.ano %></p>
+            <p class="movie-info"><strong>Duración:</strong> <%= pelicula.duracion %> minutos</p>
+            <p class="movie-info"><strong>Género:</strong> <%= pelicula.genero %></p>
+            <p class="movie-info"><strong>Director:</strong> <%= pelicula.director %></p>
+            <p class="movie-description"><strong>Descripción:</strong> <%= pelicula.descripcion %></p>
+
+            <h2 class="section-title">Copias Disponibles</h2>
+            <ul class="copy-list">
+                <% pelicula.copias.forEach(copia => { %>
+                    <li class="copy-item">
+                        <strong>Estado:</strong> <%= copia.estado %>, 
+                        <strong>Formato:</strong> <%= copia.formato %>
+                    </li>
+                <% }); %>
+            </ul>
+            <a href="/listado" class="back-button">Volver al Listado</a>
+        </div>
+    </div>
+</body>
+</html>

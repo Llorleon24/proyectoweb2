@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Películas</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Listado de Películas</h1>
+        <ul class="movie-list">
+            <% peliculas.forEach(pelicula => { %>
+                <li class="movie-item">
+                    <a href="/detalle/<%= pelicula.id %>" class="movie-link">
+                        <h2><%= pelicula.nombre %></h2>
+                        <p><strong>Género:</strong> <%= pelicula.genero %></p>
+                        <p><strong>Año:</strong> <%= pelicula.ano %></p>
+                    </a>
+                </li>
+            <% }); %>
+        </ul>
+        <a href="/" class="back-button">Volver a Inicio</a>
+    </div>
+</body>
+</html>
