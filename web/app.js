@@ -3,21 +3,20 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var session = require('express-session'); // Middleware para sesiones
+var session = require('express-session'); 
 
 // Importar las rutas
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var listadoRouter = require('./routes/listado'); // Ruta de listado
-var detalleRouter = require('./routes/detalle'); // Ruta de detalle
-var loginRouter = require('./routes/login'); // Ruta de login
+var listadoRouter = require('./routes/listado'); 
+var detalleRouter = require('./routes/detalle'); 
+var loginRouter = require('./routes/login'); 
 
 var app = express();
 
-// Configurar el middleware de sesión
 app.use(
   session({
-    secret: 'clave-secreta', // Cambia esto por una clave más segura
+    secret: 'clave-secreta',
     resave: false,
     saveUninitialized: false
   })
