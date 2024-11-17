@@ -5,7 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session'); 
 
-// Importar las rutas
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var listadoRouter = require('./routes/listado'); 
@@ -32,12 +31,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Usar las rutas
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/login', loginRouter); // Ruta para el login
-app.use('/listado', listadoRouter); // Asignar la ruta de listado
-app.use('/detalle', detalleRouter); // Asignar la ruta de detalle
+app.use('/login', loginRouter); 
+app.use('/listado', listadoRouter); 
+app.use('/detalle', detalleRouter); 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
